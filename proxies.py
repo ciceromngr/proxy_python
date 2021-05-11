@@ -49,6 +49,7 @@ def tProxy(proxy):
             chrome_options.add_argument('--proxy-server='+ proxy['http'])
             chrome = webdriver.Chrome( chrome_options=chrome_options)
             chrome.get('https://whatismyipaddress.com')
+
             time.sleep(100)
             chrome.close()
         except:
